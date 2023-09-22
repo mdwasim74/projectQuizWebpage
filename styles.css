@@ -37,7 +37,18 @@ nav > ul {
   display: flex;
   justify-content: space-evenly;
 }
+/* for li items */
+nav > ul > li {
+  color: #dfdfe2;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+}
 
+/* Change the font color of all the anchor elements within the list elements to something with a contrast ratio of at least 7:1. */
+li > a {
+  color: #dfdfe2;
+}
 h1,
 h2 {
   font-family: Verdana, sans-serif;

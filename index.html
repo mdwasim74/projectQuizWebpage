@@ -52,6 +52,7 @@
             <ul class="answers-list">
               <li>
                 <label for="q1-a1">
+                  <!-- here we are giving same value to the name of two diff inputs(by doing this both input will not be selected same time) -->
                   <input type="radio" id="q1-a1" name="q1" value="true" />
                   True
                 </label>
@@ -69,12 +70,13 @@
           <p>2</p>
           <fieldset class="question" name="html-question-two">
             <legend>
-              A label element nesting an input element is required to have a
-              for attribute with the same value as the input's id
+              <!-- A label element nesting an input element is required to have a
+              for attribute with the same value as the input's id -->
             </legend>
             <ul class="answers-list">
               <li>
                 <label for="q2-a1">
+                  <!-- here we are giving same value to the name of two diff inputs(by doing this both input will not be selected same time) -->
                   <input type="radio" id="q2-a1" name="q2" value="true" />
                   True
                 </label>
@@ -91,10 +93,40 @@
       </section>
       <section role="region" aria-labelledby="css-questions">
         <h2 id="css-questions">CSS</h2>
-
+        <!-- Creating new div within 4new div's -->
+        <div class="formrow">
+          <div class="question-block">
+            <label for="customer">Are you a frontend developer?</label>
+          </div>
+          <div class="answer">
+            <select name="customer" id="customer" required>
+              <option value="">Select an option</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="question-block">
+            <label for="css-questions">Do you have any questions:</label>
+          </div>
+          <div class="answer">
+            <textarea id="css-questions" name="css-questions" rows="5" cols="24"
+              placeholder="Who is flexbox..."></textarea>
+          </div>
+        </div>
       </section>
+      <button typ="submit">Send</button>
     </form>
   </main>
+  <!-- now adding footer and nesting a address elements -->
+  <footer>
+    <address>
+      <!-- modifying text to link by using a tag -->
+      <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+      San Francisco<br />
+      California<br />
+      USA
+    </address>
+  </footer>
 </body>
 
 </html>
